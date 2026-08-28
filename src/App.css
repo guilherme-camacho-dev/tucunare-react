@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e1b4b, #3b0764);
+  color: #f8fafc;
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.cabecalho {
+  background: rgba(15, 23, 42, 0.95);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.cabecalho h1 {
+  margin: 0 0 8px;
+  font-size: 34px;
+}
+
+.cabecalho p {
+  margin: 0;
+  font-size: 16px;
+  color: #cbd5e1;
+}
+
+.painel {
+  width: 90%;
+  max-width: 700px;
+  margin: 45px auto;
+  background-color: white;
+  color: #1e293b;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.painel h2 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 26px;
+}
+
+.painel h3 {
+  margin-top: 30px;
+}
+
+.formulario {
+  display: flex;
+  gap: 10px;
+}
+
+.formulario input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 15px;
+  outline: none;
+}
+
+.formulario input:focus {
+  border-color: #9333ea;
+}
+
+.formulario button {
+  padding: 12px 20px;
+  background-color: #9333ea;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.formulario button:hover {
+  background-color: #7e22ce;
+}
+
+.lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 13px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+}
+
+.botao-excluir {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 13px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.botao-excluir:hover {
+  background-color: #dc2626;
+}
+
+.rodape {
+  background-color: rgba(15, 23, 42, 0.95);
+  color: white;
+  text-align: center;
+  padding: 22px;
+  margin-top: auto;
+}
+
+.rodape p {
+  margin: 0;
+  color: #cbd5e1;
+}
+
+.busca {
+  margin-top: 25px;
+}
+
+.busca label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.busca input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 15px;
+  outline: none;
+}
+
+.busca input:focus {
+  border-color: #9333ea;
+}
+
+@media (max-width: 600px) {
+  .formulario {
+    flex-direction: column;
+  }
+
+  .lista li {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .botao-excluir {
+    width: 100%;
+  }
+}
